@@ -8,7 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
-import { sadminGuard } from './sadmin.guard';
+import { sAdminGuard } from './sadmin.guard';
 
 
 const routes: Routes = [
@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:"signin", component:SigninComponent},
   {path:"signup", component:SignupComponent},
   {path:"profile", component:ProfileComponent},
-  {path:"userlist", component:UserListComponent, canActivate:[sadminGuard]},
+  {path:"userlist", component:UserListComponent, canActivate:[sAdminGuard]},
 
 ];
 

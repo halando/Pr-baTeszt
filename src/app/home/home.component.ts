@@ -15,7 +15,7 @@ export class HomeComponent {
   getCompanies(){
     this.auth.getCompanies().subscribe(
       {
-        next:(res: )=>{this.companies=res},
+        next:(res)=>{this.companies=res},
         error:(res)=>{this.companies=res},
       }
     )

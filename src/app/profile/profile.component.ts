@@ -37,7 +37,7 @@ export class ProfileComponent {
     if (this.newPassword1==this.newPassword2){
       let body={
         id:this.currentUser.id,
-        currentPassword:"qasasa",
+        currentPassword:"",
         newPassword:this.newPassword1
       }
       this.auth.changePassword(body)
